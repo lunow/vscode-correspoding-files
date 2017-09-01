@@ -1,6 +1,6 @@
 # open-corresponding-files README
 
-This is the README for your extension "open-corresponding-files". After writing up a brief description, we recommend including the following sections.
+Open corresponding files
 
 ## Features
 
