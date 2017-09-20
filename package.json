@@ -15,6 +15,17 @@
     ],
     "main": "./extension",
     "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Open Corresponding Files configuration",
+            "properties": {
+                "openCorrespondingFile.extensionList": {
+                    "type": "array",
+                    "default": [".test.js", ".js", ".html"],
+                    "description": "Specifies the list of extensions to identify corresponding files. Checked in the order, so put the longes first like .test.js and second .js"
+                }
+            }
+        },
         "commands": [{
             "command": "extension.openCorrespondingFile",
             "title": "Open corresponding file"
