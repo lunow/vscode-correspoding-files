@@ -6,7 +6,7 @@ Open corresponding files
 
 It loops over corresponding files. Corresponding means same folder with different file extensions. You can set your own list of extensions.
 
-![Open corresponding files](images/open.png)
+![Open corresponding files](images/open.gif)
 
 
 ## Extension Settings

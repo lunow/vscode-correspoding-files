@@ -4,6 +4,10 @@
     "description": "This extension open templates, testfiles or other related files within the same folder and a given name schema",
     "version": "0.0.3",
     "publisher": "PaulLunow",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/lunow/vscode-correspoding-files"
+    },
     "engines": {
         "vscode": "^1.15.0"
     },
