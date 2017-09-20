@@ -1,35 +1,26 @@
-# open-corresponding-files README
+# README
 
 Open corresponding files
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+It loops over corresponding files. Corresponding means same folder with different file extensions. You can set your own list of extensions.
 
-For example if there is an image subfolder under your extension project workspace:
+![Open corresponding files](images/open.png)
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `openCorrespondingFile.extensionList`: `['.test.js', '.js', '.html']`
+
+Add it to your shortcuts (I would suggest `[alt] + [o]`) the command is `extension.openCorrespondingFile`
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+* Its just stupid string matching. So testing .js before .test.js will not work. Could be improved in the future.
+* Improve the gif quality
 
 ## Release Notes
 
@@ -37,29 +28,4 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release
